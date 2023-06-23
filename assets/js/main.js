@@ -67,6 +67,15 @@
     })
   }
 
+
+
+  // $(window).on('load',function(){
+  //   $('.loading').fadeOut(1000,function(){
+  //     $('body').css('overflow','auto ');
+  //   });
+
+  // })
+
   /**
    * Back to top button
    */
