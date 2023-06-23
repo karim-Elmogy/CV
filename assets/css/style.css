@@ -72,13 +72,24 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 150px;
   height: 150px;
-  border: 8px solid #2c2f3f;
+  border: 8px solid #0b87c0;
 }
-#header .profile h1 {
-  font-size: 24px;
+#header .profile h1 
+{
+  font-size: 26px;
   margin: 0;
   padding: 0;
   font-weight: 600;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#header .profile p{
+  padding-top: 10px !important;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
   -moz-text-align-last: center;
   text-align-last: center;
   font-family: "Poppins", sans-serif;
@@ -194,7 +205,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100vh;
   /* background: url("../img/hero-bg.jpg") top center; */
-  background: linear-gradient(315deg, #070814, rgba(5, 5, 54, 0.6)), url(../img/hero-bg.jpg);
+  background: linear-gradient(315deg, rgb(4, 11, 20), rgba(4, 11, 20, 0.6)), url(../img/hero-bg.jpg);
   background-size: cover;
 }
 #particles-js:before {
@@ -326,6 +337,123 @@ section {
 .about .content p:last-child {
   margin-bottom: 0;
 }
+.about .pdf{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.about .pdf a{
+  color: white;
+}
+
+
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+
+
+
+
+
+/* 7 */
+.btn-7 {
+  background: linear-gradient(0deg, rgba(20,157,221,1) 0%, rgba(18,151,221,1) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-7 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-7:before,
+  .btn-7:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: rgba(20,157,221,1);
+    box-shadow:
+     -7px -7px 20px 0px rgba(255,255,255,.9),
+     -4px -4px 5px 0px rgba(255,255,255,.9),
+     7px 7px 20px 0px rgba(0,0,0,.2),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: all 0.3s ease;
+  }
+  .btn-7:before{
+     height: 0%;
+     width: 2px;
+  }
+  .btn-7:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-7:hover{
+    color: rgba(20,157,221,1);
+    background: transparent;
+  }
+  .btn-7:hover:before {
+    height: 100%;
+  }
+  .btn-7:hover:after {
+    width: 100%;
+  }
+  .btn-7 span:before,
+  .btn-7 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgba(20,157,221,1);
+    box-shadow:
+     -7px -7px 20px 0px rgba(255,255,255,.9),
+     -4px -4px 5px 0px rgba(255,255,255,.9),
+     7px 7px 20px 0px rgba(0,0,0,.2),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: all 0.3s ease;
+  }
+  .btn-7 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-7 span:after {
+    height: 2px;
+    width: 0%;
+  }
+  .btn-7 span:hover:before {
+    height: 100%;
+  }
+  .btn-7 span:hover:after {
+    width: 100%;
+  }
+
+  .btn-7 span:hover a{
+    color: #149ddd;
+  }
+   
+
+
+
 
 /*--------------------------------------------------------------
 # Facts
@@ -452,6 +580,7 @@ section {
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+  color: #149ddd;
 }
 .resume .resume-item ul {
   padding-left: 20px;
